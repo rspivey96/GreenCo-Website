@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="GreenCo Home Improvement Business Website">
+	<meta name="keywords" content="greenco, home, improvement, roofing, roof, gutters, texas, oklahoma, rayburn, phillips, interior, exterior, remodeling, inspection, dallas, fort, worth, greencousa" />
+	<meta name="author" content="Reed Spivey" />
+
+	<!-- Website title and icon -->
+	<title>GreenCo Home Improvement</title>
+	<link rel="icon" href="assets/img/GreenCo Logo.jpg">
+
+	<!--  Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/datetimepicker/jquery.datetimepicker.css" />
+
+	<!-- Google Analytics here? -->
+
+</head>
+<body>
+
+	<!-- Fixed header -->
+	<div class="header">
+		<a id="header-logo" href="#"><b><span style="color:green;">Greenco </span> Home Improvement</b></a>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#join">Join Our Team</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- Home Section -->
+	<div class="section" id="home">
+		<div class="welcome-text">
+			<h1 class="intro-text"> Experience the <br><span style="color:green;">GreenCo</span><br> Difference </h1>
+			<button class="welcome-button" id="open-welcome-modal"> Book an Appointment </button><br>
+			<button class="welcome-button" id="open-welcome-join-modal"> Join Our Team </button><br>
+			<a href="#services"><img class="blink" src="assets/img/downarrow.png" style="width:50px;"></a>
+		</div>
+	</div>
+
+	<!-- Services Section -->
+	<div class="section" id="services">
+		<div class="service-container">
+			<div class="service-tag-container">
+				<h2 class="section-tag service-tag">Services</h2>
+			</div>
+			<center><div class="service-type">
+				<img src="assets/img/RoofRepair-Residential.jpg">
+				<h3><b> Roofing </b></h3>
+				<p>We do quality and clean Residential, Commercial, and Multi-Family Dwelling roofing. We have an extremely diverse portfolio in all styles of roof systems. There is no roof we can't make happen!</p>
+			</div>
+			<div class="service-type">
+				<img src="assets/img/gutter install.jpg">
+				<h3><b> Gutters </b></h3>
+				<p> We can meet your needs with any style of gutters. Whether it is Residential, Commercial, or Multi-Family Dwellings, we offer: 5" &amp; 6" K Style, 5" &amp; 6" Half Round, Commercial Style, Custom Fabrication. Choose from over 30 colors, copper, or galvalume.</p>
+			</div>
+			<div class="service-type">
+				<img src="assets/img/remodel pic.jpg">
+				<h3><b> Interior and Exterior Modeling </b></h3>
+				<p> To enhance the design of your property, we offer numerous remodeling options that include; kitchen remodels, bathroom remodels, add-ons, wall opening and removal, outdoor living areas, flooring, brick, stone, and siding. </p>
+			</div></center>
+			<center><button id="open-modal"> Schedule Your Free Inspection </button></center>
+		</div>
+	</div>
+
+	<!-- Appointment Modal -->
+	<div id="appt" class="modal">
+	  <div class="modal-container">
+	    <span class="close-button">&times;</span>
+	    <h2 class="section-tag appt-tag">Book Appointment</h2>
+			<p> Fill out the form below and we'll come to you for your free inspection! </p>
+			<form method="POST" action="https://formspree.io/rspivey96@gmail.com">
+				<input type="text" name="name" placeholder="NAME" required>
+				<input type="email" name="_replyto" placeholder="EMAIL" required>
+				<input type="phone" name="phone-number" placeholder="PHONE" required>
+				<input type="address" name="adress" placeholder="ADDRESS" required>
+				<input class="date-pick" type="text" name="date" placeholder="DATE" required>
+				<textarea name="message" placeholder="COMMENTS OR SPECIAL INSTRUCTIONS"></textarea>
+				<button class="button" type="submit">SEND</button>
+			</form>
+	  </div>
+	</div>
+
+	<!-- About Section -->
+	<div class="section" id="about">
+		<div class="about-container">
+				<h2 class="section-tag about-tag">About Us</h2>
+				<p> &emsp;GreenCo is a fully licensed, bonded, and insured company dedicated to recycling. From the beginning, we have always taken the initiative to recycle as much used material as possible, including the gutter aluminum and shingle materials.</p>
+				<p> &emsp;GreenCo is owned and operated by father and son, Rayburn Phillips &amp; Rayburn Phillips II. From a humble beginning, both grew up working trade jobs in the construction business, learning the ins and outs of every part of a build. With more than 30 years of experience, GreenCo isn't motivated by big checks. We care more about taking care of you and your needs at the fairest price. We understand that every client's vision is different. With each project, our first prioirity is customer satisfaction. Our management and sales teams are grounded in this mission and we uphold the highest expectations for every project.</p>
+			<div class="slider">
+				<div>
+					<div class="slide-title"><center class="slide1-title"><b>THREE GENERATIONS</b></center></div>
+					<img src="assets/img/slide1.jpeg">
+				</div>
+				<div>
+					<div class="slide-title"><center class="slide1-title"><b>WE'RE DIFFERENT</b></center></div>
+					<img src="assets/img/slide2.jpg">
+				</div>
+				<div>
+					<div class="slide-title"><center class="slide1-title"><b>CHOOSE <span style="color:green;">GREENCO</span></b></center></div>
+					<img src="assets/img/slide3.jpg">
+				</div>
+			</div>
+			<center><img class="logo" src="assets/img/GreenCo Logo.jpg"></center>
+		</div>
+	</div>
+
+	<!-- Gallery Section -->
+	<div class="section" id="gallery">
+		<div class="gallery-container">
+			<h2 class="section-tag gallery-tag">Gallery</h2>
+			<div class="slider2-container">
+				<h2>Check out a handful of projects we have completed in the last few months!</h2>
+				<div class="slider2">
+					<div><img src="assets/img/20160530_124312.jpg"></div>
+					<div><img src="assets/img/20160530_124403.jpg"></div>
+					<div><img src="assets/img/20160625_150825.jpg"></div>
+					<div><img src="assets/img/20160625_150924.jpg"></div>
+					<div><img src="assets/img/20160625_151030.jpg"></div>
+					<div><img src="assets/img/20160802_163607.jpg"></div>
+					<div><img src="assets/img/20160802_163657.jpg"></div>
+					<div><img src="assets/img/20160901_132312.jpg"></div>
+					<div><img src="assets/img/20160901_132340.jpg"></div>
+					<div><img src="assets/img/20160901_132409.jpg"></div>
+					<div><img src="assets/img/20160901_132513.jpg"></div>
+					<div><img src="assets/img/20160921_124410.jpg"></div>
+					<div><img src="assets/img/20160921_143658.jpg"></div>
+					<div><img src="assets/img/20161018_183141.jpg"></div>
+					<div><img src="assets/img/20161018_183332.jpg"></div>
+					<div><img src="assets/img/20170304_134356.jpg"></div>
+					<div><img src="assets/img/20170304_134438.jpg"></div>
+					<div><img src="assets/img/20170304_134614.jpg"></div>
+					<div><img src="assets/img/20170611_134000.jpg"></div>
+					<div><img src="assets/img/20170611_134128.jpg"></div>
+					<div><img src="assets/img/20170611_134214.jpg"></div>
+					<div><img src="assets/img/20170611_134326.jpg"></div>
+					<div><img src="assets/img/20170811_143812.jpg"></div>
+					<div><img src="assets/img/20170815_123951.jpg"></div>
+					<div><img src="assets/img/20170822_115118.jpg"></div>
+					<div><img src="assets/img/20170427_105128.jpg"></div>
+					<div><img src="assets/img/20160802_163033.jpg"></div>
+					<div><img src="assets/img/20170427_184614.jpg"></div>
+					<div><img src="assets/img/20170510_165132.jpg"></div>
+					<div><img src="assets/img/20170811_143812.jpg"></div>
+					<div><img src="assets/img/20170814_151422.jpg"></div>
+					<div><img src="assets/img/20170814_151512.jpg"></div>
+					<div><img src="assets/img/20171114_172434.jpg"></div>
+					<div><img src="assets/img/20171218_165746.jpg"></div>
+					<div><img src="assets/img/20171218_165837.jpg"></div>
+				</div>
+				<div class="slider2-nav">
+					<div><img src="assets/img/20160530_124312.jpg"></div>
+					<div><img src="assets/img/20160530_124403.jpg"></div>
+					<div><img src="assets/img/20160625_150825.jpg"></div>
+					<div><img src="assets/img/20160625_150924.jpg"></div>
+					<div><img src="assets/img/20160625_151030.jpg"></div>
+					<div><img src="assets/img/20160802_163607.jpg"></div>
+					<div><img src="assets/img/20160802_163657.jpg"></div>
+					<div><img src="assets/img/20160901_132312.jpg"></div>
+					<div><img src="assets/img/20160901_132340.jpg"></div>
+					<div><img src="assets/img/20160901_132409.jpg"></div>
+					<div><img src="assets/img/20160901_132513.jpg"></div>
+					<div><img src="assets/img/20160921_124410.jpg"></div>
+					<div><img src="assets/img/20160921_143658.jpg"></div>
+					<div><img src="assets/img/20161018_183141.jpg"></div>
+					<div><img src="assets/img/20161018_183332.jpg"></div>
+					<div><img src="assets/img/20170304_134356.jpg"></div>
+					<div><img src="assets/img/20170304_134438.jpg"></div>
+					<div><img src="assets/img/20170304_134614.jpg"></div>
+					<div><img src="assets/img/20170611_134000.jpg"></div>
+					<div><img src="assets/img/20170611_134128.jpg"></div>
+					<div><img src="assets/img/20170611_134214.jpg"></div>
+					<div><img src="assets/img/20170611_134326.jpg"></div>
+					<div><img src="assets/img/20170811_143812.jpg"></div>
+					<div><img src="assets/img/20170815_123951.jpg"></div>
+					<div><img src="assets/img/20170822_115118.jpg"></div>
+					<div><img src="assets/img/20170427_105128.jpg"></div>
+					<div><img src="assets/img/20160802_163033.jpg"></div>
+					<div><img src="assets/img/20170427_184614.jpg"></div>
+					<div><img src="assets/img/20170510_165132.jpg"></div>
+					<div><img src="assets/img/20170811_143812.jpg"></div>
+					<div><img src="assets/img/20170814_151422.jpg"></div>
+					<div><img src="assets/img/20170814_151512.jpg"></div>
+					<div><img src="assets/img/20171114_172434.jpg"></div>
+					<div><img src="assets/img/20171218_165746.jpg"></div>
+					<div><img src="assets/img/20171218_165837.jpg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Join Our Team Section -->
+	<div class="section" id="join">
+		<div class="join-container">
+			<h2 class="section-tag join-tag">Join Our Team</h2>
+			<center><div class="recruitment-container rc1">
+				<img src="assets/img/welcometexas.jpg">
+				<p>Serving the greater Dallas/Forth Worth area, Waco, College Station, and Houston</p>
+			</div>
+			<div class="recruitment-container rc2">
+				<img src="assets/img/welcomeoklahoma.jpg">
+				<p>Serving the greater Oklahoma City area, Norman, Noble, Goldsby, and Blanchard</p>
+			</div><br>
+			<button id="open-join-modal"> Join Today </button></center>
+		</div>
+	</div>
+
+	<!-- Join Modal -->
+	<div id="join-modal" class="modal">
+	  <div class="modal-container">
+	    <span class="close-button2">&times;</span>
+	    <h2 class="section-tag appt-tag">Join Our Team</h2>
+			<p> Fill out the form below and we'll contact you! </p>
+			<form method="POST" action="https://formspree.io/rspivey96@gmail.com">
+				<input type="text" name="name" placeholder="NAME" required>
+				<input type="email" name="_replyto" placeholder="EMAIL" required>
+				<input type="phone" name="phone-number" placeholder="PHONE" required>
+				<select name="location" required>
+					<option value="" disabled selected hidden>SELECT LOCATION</option>
+					<option value="any">ANY LOCATION</option>
+					<option value="texas">TEXAS</option>
+					<option value="oklahoma">OKLAHOMA</option>
+				</select>
+				<textarea name="message" placeholder="MESSAGE"></textarea>
+				<button class="button" type="submit">SEND</button>
+			</form>
+	  </div>
+	</div>
+
+	<!-- Contact Section -->
+	<div class="section" id="contact">
+		<div class="contact-container">
+			<h2 class="section-tag contact-tag">Contact</h2>
+			<center><div class="contact-info">
+				For any inquiries, questions or commendations, contact us through one of the following or fill out the form below: <br><br>
+				info@greencousa.net <br>Texas Tel: (817)879-2869<br>Oklahoma Tel: (405)535-9887
+			</div></center><br>
+			<form method="POST" action="https://formspree.io/rspivey96@gmail.com">
+				<input type="text" name="name" placeholder="NAME" required>
+				<input type="email" name="_replyto" placeholder="EMAIL" required>
+				<input type="phone" name="phone-number" placeholder="PHONE" required>
+				<textarea name="message" placeholder="YOUR REQUEST" required></textarea>
+				<button class="button" type="submit">SEND</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Sponsor Section -->
+	<div class="section" id="sponsors">
+		<center><div class="sponsor-slider">
+			<div><img src="assets/img/norandex logo.jpg"></div>
+			<div><img src="assets/img/Alcoa_Logo.jpg"></div>
+			<div><img src="assets/img/Certainteed-Logo.jpg"></div>
+			<div><img src="assets/img/davinci logo.jpg"></div>
+			<div><img src="assets/img/DECRA-Logo.jpg"></div>
+			<div><img src="assets/img/GAF_logo.jpg"></div>
+			<div><img src="assets/img/IKO-logo.jpg"></div>
+			<div><img src="assets/img/Malarkey_Logo.jpg"></div>
+			<div><img src="assets/img/OwensCorning_logo.jpg"></div>
+			<div><img src="assets/img/tamko_logo.jpg"></div>
+		</div></center>
+	</div>
+
+	<!-- Footer Section -->
+	<div class="section" id="footer">
+		<div class="left">© 2018 GreenCo Home Improvement.</div>
+		<div class="right"><a href=""><img class="facebook-icon" src="assets/img/negative-facebook-logo.png"></a></div>
+	</div>
+
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
+	<script type="text/javascript" src="assets/js/functions.js"></script>
+	<!-- <script src="assets/datetimepicker/jquery.js"></script> -->
+	<script src="assets/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+</body>
+</html>
