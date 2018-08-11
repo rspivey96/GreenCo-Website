@@ -573,7 +573,7 @@ html, body {
     background-color: #ffffff;
     width: 80%;
     height: 100%;
-    margin: 5% 10%;
+    margin: 2% 10% 5% 10%;
     overflow: hidden;
 }
 
@@ -643,7 +643,7 @@ html, body {
 .contact-container {
     background-color: #0d0d0d;
     width: 75%;
-    margin: 7% 12.5% 7% 12.5%;
+    margin: 3% 12.5% 3% 12.5%;
     opacity: .8;
     padding-bottom: 30px;
 }
