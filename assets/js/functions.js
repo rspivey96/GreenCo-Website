@@ -39,6 +39,35 @@ window.onclick = function(event) {
 
 
 $(document).ready(function(){
+  // Script for dynamic smooth scrolling
+  // Select all links with hashes
+  $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function(event) {
+      // On-page links
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                  scrollTop: target.offset().top - document.getElementById('header-offset').offsetHeight
+              }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                      return false;
+                  } else {
+                      $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                      $target.focus(); // Set focus again
+                  };
+              });
+          }
+      }
+  });
   $('.date-pick').datetimepicker({
     format: 'M. d, Y g:i a',
     allowTimes:['8:00','8:30','9:00','9:30','10:00','10:30','11:00','11:30','12:00','12:30','13:00','13:30','14:00','14:30','15:00','15:30','16:00','16:30','17:00'],
