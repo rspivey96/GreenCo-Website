@@ -16,7 +16,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/datetimepicker/jquery.datetimepicker.css" />
+	<link rel="stylesheet" type="text/css" href="assets/picker/themes/default.css">
+	<link rel="stylesheet" type="text/css" href="assets/picker/themes/default.date.css">
+	<link rel="stylesheet" type="text/css" href="assets/picker/themes/default.time.css">
 
 	<!-- Google Analytics here? -->
 
@@ -78,11 +80,12 @@
 	    <h2 class="section-tag appt-tag">Book Appointment</h2>
 			<p> Fill out the form below and we'll come to you for your free inspection! </p>
 			<form method="POST" action="https://formspree.io/info@greencousa.net">
-				<input type="text" name="name" placeholder="NAME" required>
-				<input type="email" name="_replyto" placeholder="EMAIL" required>
-				<input type="phone" name="phone-number" placeholder="PHONE" required>
-				<input type="address" name="adress" placeholder="ADDRESS" required>
-				<input class="date-pick" type="text" name="date" placeholder="DATE" required>
+				<input class="left-input" type="text" name="name" placeholder="NAME" required>
+				<input class="right-input" type="text" name="_replyto" placeholder="EMAIL" required>
+				<input class="left-input"type="text" name="phone-number" placeholder="PHONE" required>
+				<input class="right-input"type="text" name="address" placeholder="ADDRESS" required>
+				<input class="date-pick left-input" type="text" name="date" placeholder="DATE" required>
+				<input class="time-pick right-input" type="text" name="time" placeholder="TIME" required>
 				<textarea name="message" placeholder="COMMENTS OR SPECIAL INSTRUCTIONS"></textarea>
 				<button class="button" type="submit">SEND</button>
 			</form>
@@ -280,7 +283,8 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/functions.js"></script>
-	<!-- <script src="assets/datetimepicker/jquery.js"></script> -->
-	<script src="assets/datetimepicker/build/jquery.datetimepicker.full.min.js"></script>
+	<script type="text/javascript" src="assets/picker/picker.js"></script>
+	<script type="text/javascript" src="assets/picker/picker.date.js"></script>
+	<script type="text/javascript" src="assets/picker/picker.time.js"></script>
 </body>
 </html>

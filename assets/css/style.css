@@ -1,3 +1,7 @@
+/* TODO: GOOGLE ANALYTICS STUFF */
+/* TODO: Update 'Schedule a free inspection' */
+
+
 /*----------------------------------------------------------------------------*/
 /* Global Stuff */
 /*----------------------------------------------------------------------------*/
@@ -357,10 +361,16 @@ html, body {
     cursor: pointer;
 }
 
-.modal-container input[type=text], .modal-container input[type=email], .modal-container input[type=phone], .modal-container input[type=date], .modal-container input[type=address], .modal-container select, .modal-container textarea {
-    margin: 5px 20%;
-    padding: 8px;
+.modal-container form {
     width: 60%;
+    margin: 0 auto;
+}
+
+.modal-container input {
+    display: inline-block;
+    margin: 2px auto;
+    padding: 8px;
+    width: 49.5%;
     background-color: var(--color-modal);
     border: 2px solid green;
     color: green;
@@ -369,16 +379,16 @@ html, body {
 }
 
 .modal-container select {
-  margin: 5px 20%;
-  padding: 8px;
-  width: 60%;
-  background-color: var(--color-modal);
-  border: 2px solid green;
-  color: green;
-  box-sizing: border-box;
-  resize: vertical;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0px;
+    margin: 0px 20%;
+    padding: 8px;
+    width: 60%;
+    background-color: var(--color-modal);
+    border: 2px solid green;
+    color: green;
+    box-sizing: border-box;
+    resize: vertical;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
 }
 
 .modal-container select:invalid {
@@ -388,10 +398,23 @@ html, body {
 .modal-container textarea {
     min-height: 37px; /* 12 + 13 + 12 */
     max-height: 400px;
+    margin: 2px 0;
+    width: 100%;
     height: 100px;
+    background-color: var(--color-modal);
+    border: 2px solid green;
+    color: green;
 }
 
-.modal-container input[type=text]:focus, .modal-container input[type=email]:focus,  .modal-container input[type=phone]:focus, .modal-container input[type=date]:focus, .modal-container input[type=address]:focus, .modal-container select:focus, .modal-container textarea:focus {
+.left-input {
+    float: left;
+}
+
+.right-input {
+    float: right;
+}
+
+.modal-container input[type=text]:focus, .modal-container select:focus, .modal-container textarea:focus {
     outline: none;
 }
 
