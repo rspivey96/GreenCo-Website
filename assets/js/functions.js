@@ -78,7 +78,7 @@ $(document).ready(function(){
     disable: [1],
     min: true,
     format: 'dddd, mmmm d, yyyy',
-    today: '1'
+    today: ''
   });
   $('.time-pick').pickatime({
     min: [8,0],

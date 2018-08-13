@@ -7,6 +7,7 @@
 	<meta name="description" content="GreenCo Home Improvement Business Website">
 	<meta name="keywords" content="greenco, home, improvement, roofing, roof, gutters, texas, oklahoma, rayburn, phillips, interior, exterior, remodeling, inspection, dallas, fort, worth, greencousa" />
 	<meta name="author" content="Reed Spivey" />
+	<meta name="google-site-verification" content="8D17sL36o52OYq1nhj-EKMykAfGAbzac-Prvuyk2m30" />
 
 	<!-- Website title and icon -->
 	<title>GreenCo Home Improvement</title>
@@ -20,7 +21,15 @@
 	<link rel="stylesheet" type="text/css" href="assets/picker/themes/default.date.css">
 	<link rel="stylesheet" type="text/css" href="assets/picker/themes/default.time.css">
 
-	<!-- Google Analytics here? -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123815668-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-123815668-1');
+	</script>
 
 </head>
 <body>
@@ -86,7 +95,7 @@
 				<input class="right-input"type="text" name="address" placeholder="ADDRESS" required>
 				<input class="date-pick left-input" type="text" name="date" placeholder="DATE" required>
 				<input class="time-pick right-input" type="text" name="time" placeholder="TIME" required>
-				<textarea name="message" placeholder="COMMENTS OR SPECIAL INSTRUCTIONS"></textarea>
+				<textarea name="message" placeholder="ADDITIONAL INFO"></textarea>
 				<button class="button" type="submit">SEND</button>
 			</form>
 	  </div>
@@ -223,10 +232,10 @@
 	    <h2 class="section-tag appt-tag">Join Our Team</h2>
 			<p> Fill out the form below and we'll contact you! </p>
 			<form method="POST" action="https://formspree.io/info@greencousa.net">
-				<input type="text" name="name" placeholder="NAME" required>
-				<input type="email" name="_replyto" placeholder="EMAIL" required>
-				<input type="phone" name="phone-number" placeholder="PHONE" required>
-				<select name="location" required>
+				<input class="left-input" type="text" name="name" placeholder="NAME" required>
+				<input class="right-input" type="text" name="_replyto" placeholder="EMAIL" required>
+				<input class="left-input" type="text" name="phone-number" placeholder="PHONE" required>
+				<select class="right-input" name="location" required>
 					<option value="" disabled selected hidden>SELECT LOCATION</option>
 					<option value="any">ANY LOCATION</option>
 					<option value="texas">TEXAS</option>
